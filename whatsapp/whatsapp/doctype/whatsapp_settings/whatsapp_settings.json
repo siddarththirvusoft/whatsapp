@@ -7,7 +7,8 @@
  "field_order": [
   "enable",
   "access_token",
-  "url"
+  "url",
+  "meta_verify_token"
  ],
  "fields": [
   {
@@ -22,15 +23,22 @@
    "label": "Access Token"
   },
   {
+   "description": "Ex: https://graph.facebook.com/v21.0/{phone no id}/messages",
    "fieldname": "url",
    "fieldtype": "Data",
    "label": "Url"
+  },
+  {
+   "description": "For Webhooks Verification",
+   "fieldname": "meta_verify_token",
+   "fieldtype": "Data",
+   "label": "Meta Verify token"
   }
  ],
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2025-02-02 12:28:52.458421",
+ "modified": "2025-02-02 21:39:26.607294",
  "modified_by": "Administrator",
  "module": "Whatsapp",
  "name": "Whatsapp Settings",

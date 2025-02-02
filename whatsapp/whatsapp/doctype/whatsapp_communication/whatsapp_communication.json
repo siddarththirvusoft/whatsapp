@@ -1,0 +1,150 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{party_id}-{###}",
+ "creation": "2025-02-02 12:37:22.033757",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "channel_type",
+  "phone_number_id",
+  "from",
+  "message_type",
+  "message_body",
+  "contact_name",
+  "contact_wa_id",
+  "column_break_ssmu",
+  "status",
+  "display_phone_number",
+  "message_id",
+  "timestamp",
+  "party_type",
+  "party_id",
+  "party_name",
+  "message_to",
+  "delivery_time",
+  "read_time"
+ ],
+ "fields": [
+  {
+   "fieldname": "phone_number_id",
+   "fieldtype": "Data",
+   "label": "Phone Number Id"
+  },
+  {
+   "fieldname": "display_phone_number",
+   "fieldtype": "Data",
+   "label": "Display Phone Number"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Data",
+   "label": "From"
+  },
+  {
+   "fieldname": "message_id",
+   "fieldtype": "Data",
+   "label": "Message Id"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "TimeStamp"
+  },
+  {
+   "fieldname": "message_type",
+   "fieldtype": "Data",
+   "label": "Message Type"
+  },
+  {
+   "fieldname": "message_body",
+   "fieldtype": "Data",
+   "label": "Message body"
+  },
+  {
+   "fieldname": "contact_name",
+   "fieldtype": "Data",
+   "label": "Contact Name"
+  },
+  {
+   "fieldname": "contact_wa_id",
+   "fieldtype": "Data",
+   "label": "Contact Wa Id"
+  },
+  {
+   "fieldname": "channel_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Channel Type",
+   "options": "\nIncoming\nOutgoing"
+  },
+  {
+   "fieldname": "party_type",
+   "fieldtype": "Link",
+   "label": "Party Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "party_id",
+   "fieldtype": "Dynamic Link",
+   "label": "Party Id",
+   "options": "party_type"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "column_break_ssmu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nPending\nSuccess\nsent\ndelivered\nread\nfailed\nwarning\ndeleted"
+  },
+  {
+   "fieldname": "message_to",
+   "fieldtype": "Data",
+   "label": "Message To"
+  },
+  {
+   "fieldname": "delivery_time",
+   "fieldtype": "Datetime",
+   "label": "Delivery Time"
+  },
+  {
+   "fieldname": "read_time",
+   "fieldtype": "Datetime",
+   "label": "Read Time"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-02-02 14:52:53.045911",
+ "modified_by": "Administrator",
+ "module": "Whatsapp",
+ "name": "Whatsapp Communication",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
